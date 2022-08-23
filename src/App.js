@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 
 function App() {
-  // Properties
+  
   const [showResults, setShowResults] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
@@ -100,9 +100,6 @@ function App() {
     },
   ];
 
-  // Helper Functions
-
-  /* A possible answer was clicked */
   const optionClicked = (isCorrect) => {
     // Increment the score
     if (isCorrect) {
@@ -116,7 +113,6 @@ function App() {
     }
   };
 
-  /* Resets the game back to default */
   const restartGame = () => {
     setScore(0);
     setCurrentQuestion(0);
